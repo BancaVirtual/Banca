@@ -1,0 +1,21 @@
+<p>
+  <b>Nome:</b>
+  <%=h @mapa.nome %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%=h @mapa.longitude %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%=h @mapa.latitude %>
+</p>
+
+    <%= @map.to_html %>
+    <%= @map.div(:width => 600, :height => 400) %>
+
+
+<%= link_to 'Edit', edit_mapa_path(@mapa) %> |
+<%= link_to 'Back', mapas_path %>
